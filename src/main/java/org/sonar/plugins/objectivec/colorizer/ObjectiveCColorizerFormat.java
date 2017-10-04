@@ -22,16 +22,12 @@ package org.sonar.plugins.objectivec.colorizer;
 import java.util.List;
 
 import org.sonar.api.web.CodeColorizerFormat;
-import org.sonar.colorizer.CDocTokenizer;
-import org.sonar.colorizer.CppDocTokenizer;
-import org.sonar.colorizer.JavadocTokenizer;
-import org.sonar.colorizer.KeywordsTokenizer;
-import org.sonar.colorizer.StringTokenizer;
-import org.sonar.colorizer.Tokenizer;
+import org.sonar.colorizer.*;
 import org.sonar.objectivec.api.ObjectiveCKeyword;
 import org.sonar.plugins.objectivec.core.ObjectiveC;
 
-import com.google.common.collect.ImmutableList;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ObjectiveCColorizerFormat extends CodeColorizerFormat {
 
@@ -41,12 +37,7 @@ public class ObjectiveCColorizerFormat extends CodeColorizerFormat {
 
     @Override
     public List<Tokenizer> getTokenizers() {
-        return ImmutableList.of(
-                new StringTokenizer("<span class=\"s\">", "</span>"),
-                new CDocTokenizer("<span class=\"cd\">", "</span>"),
-                new JavadocTokenizer("<span class=\"cppd\">", "</span>"),
-                new CppDocTokenizer("<span class=\"cppd\">", "</span>"),
-                new KeywordsTokenizer("<span class=\"k\">", "</span>", ObjectiveCKeyword.keywordValues()));
+        return new ArrayList<Tokenizer>();
     }
 
 }

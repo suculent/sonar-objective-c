@@ -51,7 +51,7 @@ public class ObjectiveCPlugin extends SonarPlugin {
 
     public List<Class<? extends Extension>> getExtensions() {
         return ImmutableList.of(ObjectiveC.class,
-                ObjectiveCColorizerFormat.class,
+                // ObjectiveCColorizerFormat.class,
                 ObjectiveCCpdMapping.class,
 
                 ObjectiveCSquidSensor.class,

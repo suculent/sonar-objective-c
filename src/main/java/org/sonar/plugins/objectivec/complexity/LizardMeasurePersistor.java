@@ -79,7 +79,7 @@ public class LizardMeasurePersistor {
                         LOGGER.debug("Save measure {} for file {}", measure.getMetric().getName(), file);
                         sensorContext.saveMeasure(resource, measure);
                     } catch (Exception e) {
-                        LOGGER.error(" Exception -> {} -> {}", entry.getKey(), measure.getMetric().getName(), e);
+                        // LOGGER.error(" Exception -> {} -> {}", entry.getKey(), measure.getMetric().getName(), e);
                     }
                 }
             }
