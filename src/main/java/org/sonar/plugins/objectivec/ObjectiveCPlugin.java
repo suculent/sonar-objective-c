@@ -51,7 +51,6 @@ public class ObjectiveCPlugin extends SonarPlugin {
 
     public List<Class<? extends Extension>> getExtensions() {
         return ImmutableList.of(ObjectiveC.class,
-                // ObjectiveCColorizerFormat.class,
                 ObjectiveCCpdMapping.class,
 
                 ObjectiveCSquidSensor.class,
@@ -59,16 +58,23 @@ public class ObjectiveCPlugin extends SonarPlugin {
                 SurefireSensor.class,
                 CoberturaSensor.class,
 
+                 // OCLint rules
                 OCLintRulesDefinition.class,
                 OCLintSensor.class,
+
+                // OCLint quality profile
                 OCLintProfile.class,
                 OCLintProfileImporter.class,
 
+                // Faux Pas rules
                 FauxPasSensor.class,
                 FauxPasRulesDefinition.class,
+
+                // Faux Pas quality profile
                 FauxPasProfile.class,
                 FauxPasProfileImporter.class,
 
+                 // complexity
                 LizardSensor.class
                 );
     }
