@@ -27,7 +27,6 @@ import org.sonar.api.Property;
 import org.sonar.api.SonarPlugin;
 import org.sonar.plugins.objectivec.complexity.LizardSensor;
 import org.sonar.plugins.objectivec.coverage.CoberturaSensor;
-import org.sonar.plugins.objectivec.colorizer.ObjectiveCColorizerFormat;
 import org.sonar.plugins.objectivec.core.ObjectiveC;
 import org.sonar.plugins.objectivec.cpd.ObjectiveCCpdMapping;
 
