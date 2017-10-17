@@ -50,6 +50,9 @@ Binary packages are available in the release section.
 
 ### Release history
 
+### 0.6.2
+- Sonar 6.5: Removed dependency on deprecated Objective-C colorizer.
+
 ### 0.6.1
 - Replaced oclint-xcodebuild by xcpretty (see https://github.com/Backelite/sonar-objective-c/pull/25 thanks to [davidy4ng](https://github.com/davidy4ng)).
 - Added -nounittests and -usesonarscanner parameters to run-sonar.sh script (see https://github.com/Backelite/sonar-objective-c/pull/23 thanks to [davidy4ng](https://github.com/davidy4ng)).
@@ -91,7 +94,7 @@ Binary packages are available in the release section.
 - [SonarQube](http://docs.codehaus.org/display/SONAR/Setup+and+Upgrade) and [SonarQube Runner](http://docs.codehaus.org/display/SONAR/Installing+and+Configuring+SonarQube+Runner) installed ([HomeBrew](http://brew.sh) installed and ```brew install sonar-runner```)
 - [xcpretty](https://github.com/supermarin/xcpretty) (see instructions below)
 - [xctool](https://github.com/facebook/xctool) ([HomeBrew](http://brew.sh) installed and ```brew install xctool```). If you are using Xcode 6, make sure to update xctool (```brew upgrade xctool```) to a version > 0.2.2.
-- [OCLint](http://oclint-docs.readthedocs.io/en/stable/) installed. Version 0.11.0 recommended. 
+- [OCLint](http://oclint-docs.readthedocs.io/en/stable/) installed. Version 0.11.0 recommended.
 - [gcovr](http://gcovr.com) installed for legacy (pre Xcode 7 coverage)
 - [slather](https://github.com/SlatherOrg/slather) (```gem install slather```). Version 2.1.0 or above.
 - [lizard](https://github.com/terryyin/lizard) ([PIP](https://pip.pypa.io/en/stable/installing/) installed and ```sudo pip install lizard```)
@@ -99,7 +102,7 @@ Binary packages are available in the release section.
 
 ### Installation of xcpretty with JUnit reports fix
 
-At the time, xcpretty needs to be fixed to work with SonarQube. 
+At the time, xcpretty needs to be fixed to work with SonarQube.
 
 To install the fixed version, follow those steps :
 
@@ -115,7 +118,7 @@ Since Xcode 7, Apple changed its coverage data format to a new format called 'pr
 By default this format will be used by the plugin, except if you explicitly force it to legacy mode (for Xcode 6 and below) in your *sonar-project.properties* with this line:
 
     sonar.objectivec.coverageType=legacy
-  
+
 
 ### Installation (once for all your Objective-C projects)
 - Download the plugin binary into the $SONARQUBE_HOME/extensions/plugins directory
