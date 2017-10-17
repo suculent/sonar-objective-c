@@ -4,6 +4,7 @@
 
 | Branch   |      Status                                                                                                                                |
 |----------|:------------------------------------------------------------------------------------------------------------------------------------------:|
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f507b5ce581f428ca28697961aacd9ca)](https://www.codacy.com/app/suculent/sonar-objective-c?utm_source=github.com&utm_medium=referral&utm_content=suculent/sonar-objective-c&utm_campaign=badger)
 | master | [![Build Status](https://travis-ci.org/Backelite/sonar-objective-c.svg?branch=master)](https://travis-ci.org/Backelite/sonar-objective-c)  |
 | develop| [![Build Status](https://travis-ci.org/Backelite/sonar-objective-c.svg?branch=develop)](https://travis-ci.org/Backelite/sonar-objective-c) |
 
